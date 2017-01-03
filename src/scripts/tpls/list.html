@@ -1,0 +1,22 @@
+<div class="list" id="list">
+	<header>
+		<i><img src="/images/images/return1.png"></i>
+		<b>生鲜</b>
+	</header>
+	<section>
+			<ol>
+				<li v-for="item in list">
+				<div>
+					<img src="/images/images/IMG_4731_03.png">
+				</div>
+				<div>
+					<h2 v-text="item.title">sss</h2>
+					<h3 v-text="item.instruction">scsc</h3>
+					<span v-text="item.nowprice">vv</span>
+					<b v-text="item.sales">ss</b>
+					<b class="price" v-text="item.oldprice">wee</b>
+				</div>
+				</li>		
+			</ol>
+	</section>
+</div>
