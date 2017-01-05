@@ -5,7 +5,6 @@
 	@include flex-direction(column);
 	height: 100%;
 	header{
-
 		height: .44rem;
 		background: $base-color;
 		@include flexbox();
@@ -27,17 +26,23 @@
 			}
 	}
 	section{
-			@include flex();
-			width: 100%;
-			overflow: scroll;
-			background: #fff;
-   			ol{
-
+		@include flex();
+		width: 100%;
+		// overflow: hidden;
+		background: pink;
+        ol{
+   			height: 100%;
+   			width: 100%;
+   			@include flexbox();
+   			@include flex-direction(column);
+			// overflow: scroll;
    				li{
+   					@include flex();
    					@include flexbox();
+					width: 100%;
    					@include border(1px 0 1px 0, #CED6D0);
 	   				padding: .07rem .13rem; 
-					  height: 1.21rem;
+					  // height: 1.21rem;
 					>div:nth-child(1){
 						width: 1.4rem;	
 					}
@@ -70,7 +75,7 @@
 								top: .8rem;
 							}
 
-							}
+						}
 					}
    				}
 				img{
@@ -79,8 +84,57 @@
 				}
 
    			}
-
-	}
+       
+		}
+		 #index-swiper {
+          height: 100%;
+        }
+        .scroll-container {
+          padding-bottom: 0.8rem;
+          height: 100%;
+        }
+        .head {
+          text-align: center;
+          height: .35rem;
+          line-height: .35rem;
+        }
+        .head img {
+          width: .14rem;
+          height: .14rem;
+          display: inline-block;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          transition: transform 150ms;
+          -webkit-transition: transform 150ms;
+        }
+        .head.hide {
+          display: none;
+        }
+        .up {
+          transform: rotate(360deg) !important;
+          -webkit-transform: rotate(360deg) !important;
+        }
+        .foot {
+          text-align: center;
+          height: .35rem;
+          line-height: .35rem;
+        }
+        .foot img {
+          width: .14rem;
+          height: .14rem;
+          display: inline-block;
+          /*transform: rotate(0deg);*/
+          /*-webkit-transform: rotate(0deg);*/
+          transition: transform 150ms;
+          -webkit-transition: transform 150ms;
+        }
+        .foot.hide {
+          display: none;
+        }
+        .down {
+          transform: rotate(180deg) !important;
+          -webkit-transform: rotate(180deg) !important;
+        }
 	>*{
 		width: 100%;
 	}	

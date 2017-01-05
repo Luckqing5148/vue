@@ -12,6 +12,7 @@ new Vue({
 			.then(res => {
 				console.log(res)
 				this.list = res;
+				console.log(res)
 				this.swiper = new Swiper("#index-swiper",{
 					loop:true,
 					pagination : '.swiper-pagination',

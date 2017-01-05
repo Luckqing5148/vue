@@ -1,4 +1,5 @@
-<div class="home" id="home">
+<template>
+	<div class="home" id="home">
 		<header>
 			<ul>
 				<li>
@@ -70,26 +71,33 @@
 				</ol>
 			</div>
 		</section>
-
-		 <footer>
-    <ul>
-      <li class="active">
-            <i class="yo-ico">&#xe7ae;</i>
-             <b>首页</b>
-          </li>
-          <li>
-            <i class="yo-ico a">&#xe65b;</i>
-            <b>分类</b>
-          </li>
-          <li>
-            <i class="yo-ico">&#xe611;</i>
-            <b>购物车</b>
-          </li>
-         <li>
-            <i class="yo-ico">&#xe609;</i>
-            <b>我的</b>
-         </li>
-     
-    </ul>
-  </footer>
 	</div>
+</template>
+
+
+<script>
+
+  module.exports = {
+    data: function () {
+      return {
+		list:[],
+		banner:['/images/images/IMG_4730_02.png','/images/images/IMG_4730_02.png','/images/images/IMG_4730_02.png','/images/images/IMG_4730_02.png','/images/images/IMG_4730_02.png']			
+      }
+    },
+
+    mounted:function(){
+			fetch('/api/list').then(response => response.json()).then(res => {
+				console.log(res)
+				this.list = res;
+				this.swiper = new Swiper("#index-swiper",{
+					loop:true,
+					pagination : '.swiper-pagination',
+					autoplay:2000,
+					autoplayStopOnLast : true,
+				})
+			})
+		}
+  }
+</script>
+
+

@@ -6,7 +6,12 @@ $base-color:#2dac64;
   url('/images/fonts/iconfont.ttf?t=1483442756300') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('/images/fonts/iconfont.svg?t=1483442756300#iconfont') format('svg'); /* iOS 4.1- */
 }
-footer{
+a{
+	color:black;
+}
+
+%footer{
+	footer{
 		height: .6rem;
 		background: rgba(255,255,255,.5);
 		ul{
@@ -44,6 +49,7 @@ footer{
 	>*{
 		width: 100%;
 	}
+}
 
 
 
