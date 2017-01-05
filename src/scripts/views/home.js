@@ -1,6 +1,6 @@
 
-require('../lib/swiper.js')
-var Vue = require('../lib/vue.js')
+/*require('../lib/swiper.js')
+var Vue = require('../lib/vue.js')*/
 new Vue({
 	el:'#home',
 	data:{
