@@ -97,4 +97,8 @@
 			</ol>
 		</section>
 	</div>
+<<<<<<< HEAD
 </template>
+=======
+</template>
+>>>>>>> gxz

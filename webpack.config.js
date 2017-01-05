@@ -21,8 +21,13 @@ module.exports = {
 
       {
         test: /\.js$/,
+<<<<<<< HEAD
         // loader: 'babel-loader?presets[]=es2015'
         loader:'babel'
+=======
+        //loader: 'babel-loader?presets[]=es2015',
+        loader: 'babel'
+>>>>>>> gxz
       },
 
       {

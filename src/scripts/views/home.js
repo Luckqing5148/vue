@@ -1,6 +1,11 @@
 
+<<<<<<< HEAD
 // require('../lib/swiper.js')
 // var Vue = require('../lib/vue.js')
+=======
+/*require('../lib/swiper.js')
+var Vue = require('../lib/vue.js')*/
+>>>>>>> gxz
 new Vue({
 	el:'#home',
 	data:{
